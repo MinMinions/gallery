@@ -4,7 +4,9 @@
   "description": "a beautiful gallery",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --content-base build"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/MinMinions/gallery/issues"
   },
-  "homepage": "https://github.com/MinMinions/gallery#readme"
+  "homepage": "https://github.com/MinMinions/gallery#readme",
+  "devDependencies": {
+    "react": "^15.4.2",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
 }
